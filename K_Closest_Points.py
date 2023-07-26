@@ -30,12 +30,8 @@ class Solution:
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         
-        # append distance to the points
-        for i in range(len(points)):
-            points[i].append(self.distance_from_origin(points[i]))
-        
         # short based on the distance and return coordinates of first k points
-        return [[x, y] for x, y, z in sorted(points, key=lambda item: item[2])[:k]]
+        return [point for point in sorted(points, key=self.distance_from_origin)[:k]]
 
 
     # find the euclidean distance from origin
