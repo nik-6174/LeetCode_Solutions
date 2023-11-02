@@ -1,6 +1,6 @@
-# Title: 
+# Title: 397. Integer Replacement
 # Difficulty: Medium
-# Problem: 
+# Problem: https://leetcode.com/problems/integer-replacement/description/
 
 # Using Loop ##
 class Solution:
